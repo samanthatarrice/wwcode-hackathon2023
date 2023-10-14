@@ -6,7 +6,7 @@
   <li>Clone the repo:</li>
     <ul>
       <li><code>git clone git@github.com:samanthatarrice/wwcode-hackathon2023.git</code>OR</li>
-      <li><code>https://github.com/social-plan-it/plan-it-social-web.git</code>if you don't have your SSH key set up.</li>
+      <li><code>https://github.com/samanthatarrice/wwcode-hackathon2023.git</code>if you don't have your SSH key set up.</li>
     </ul>
   <li>Make sure you are in the cloned repo directory:</li>
   <ul>
