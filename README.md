@@ -30,8 +30,20 @@
 </ul>
 
 <h3>Start Server:</h3>
-
 <ul>
   <li><code>nodemon app.js</code>OR</li>
   <li><code>node app.js</code>if you didn't install nodemon</li>
+</ul>
+
+<h3>Create a branch, commit changes and create pull requests (PR):</h3>
+<ul>
+  <li><code>git checkout -b &lt;your-branch-name-here&gt;</code></li>
+  <li><code>git add .</code></li>
+  <li><code>git commit -m "Your commit message here"</code></li>
+  <li><code>git push origin &lt;your-branch-name-here&gt;</code></li>
+    <ul>
+      <li>You will see a link in your terminal to go to the PR on Github.</li>
+      <li>Add reviewers, assign yourself, and any relevant notes.</li>
+      <li>Create your PR!</li>
+    </ul>
 </ul>
