@@ -1,0 +1,100 @@
+* {
+  --coral: #ffa69e;
+  --peach: #f9b8a1;
+  --sunshine: #fee9b2;
+  --mint: #b8f2e6;
+  --new-wave: #aed9e0;
+  --persion-jewel: #6982c3;
+  --concrete: #5e6472;
+}
+
+h1 {
+  font-weight: bold !important;
+  font-size: 5vw !important;
+}
+
+.card {
+  border-width: 10px !important;
+}
+
+.square-card {
+  width: 30%;
+  height: 30% !important;
+
+  .card-img-top {
+    height: 250px;
+    border: 20px solid white;
+    border-bottom: none;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--concrete);
+  }
+}
+
+/* HERO */
+
+.hero-img {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* GOALS */
+
+.goals-title {
+  color: var(--concrete);
+}
+
+.carousel-group {
+  width: 90%;
+}
+
+.carousel-control-prev {
+  justify-content: start !important;
+
+  .carousel-control-prev-icon {
+    background-image: url("/images/chevron-left-solid.svg") !important;
+  }
+}
+
+.carousel-control-next {
+  justify-content: end !important;
+
+  .carousel-control-next-icon {
+    background-image: url("/images/chevron-right-solid.svg") !important;
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 3vw !important;
+  width: 3vw !important;
+}
+
+#goalsCarousel {
+  .card {
+    border-color: var(--peach) !important;
+  }
+}
+
+.square-card {
+  width: 30%;
+  height: 30% !important;
+
+  .card-img-top {
+    height: 17vw;
+    border: 20px solid white;
+    border-bottom: none;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--concrete);
+  }
+}
