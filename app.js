@@ -10,7 +10,7 @@ main().catch((err) =>
 
 async function main() {
   // * Removed useCreateIndex and useFindAndModify bc it wasn't supported
-  await mongoose.connect("mongodb://localhost:27017/yelp-camp", {
+  await mongoose.connect("mongodb://localhost:27017/lavender", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -28,5 +28,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Serving YelpApp on port 3000");
+  console.log("Serving Lavender on port 3000");
 });
