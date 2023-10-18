@@ -11,7 +11,7 @@
 }
 
 .navbar{
-  --bs-navbar-brand-margin-end: 52rem !important; 
+  --bs-navbar-brand-margin-end: 40rem !important; 
   --bs-navbar-brand-color: white !important; 
   --bs-navbar-nav-link-padding-x: 2rem !important;
 }
@@ -21,5 +21,45 @@
 }
 
 .logo{
-  margin-left: 7rem;
+  margin-left: 10rem;
+  font-weight:700;
+  --bs-navbar-brand-font-size: 2rem;
+}
+
+/*FOOTER STYLES*/
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color:#6982C3 !important;
+}
+
+footer .container{
+  max-width: 100%;
+}
+
+footer .listContact, .listAbout{
+  list-style: none;
+  padding:0;
+}
+
+footer h5{
+  font-weight: bold;
+}
+
+footer .col-md-1{
+  width:250px;
+}
+
+footer .col-md-3{
+  margin-right:15rem;
+}
+
+footer .row{
+  margin-top: 50px;
+}
+
+footer p{
+  margin-top: 50px;
 }
