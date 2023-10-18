@@ -1,3 +1,27 @@
+/* NAVBAR STYLES*/
+
+.custom-bg {
+  background-color: #6982c3 !important; /* Replace with your desired background color */
+}
+
+.container-fluid {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  --bs-navbar-brand-margin-end: 52rem !important;
+  --bs-navbar-brand-color: white !important;
+  --bs-navbar-nav-link-padding-x: 2rem !important;
+}
+
+#navbarSupportedContent {
+  --bs-navbar-color: white;
+}
+
+.logo {
+  margin-left: 7rem;
+}
 * {
   --coral: #ffa69e;
   --peach: #f9b8a1;
