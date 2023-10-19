@@ -44,11 +44,11 @@
 .soundbar{
   height: 111px;
   border-radius: 4rem;
-  border: 3px solid var(--clr-Shower-me-in-sunshine);
+  border: 4px solid var(--clr-Shower-me-in-sunshine);
 }
 
 .vol-line{
-  height: 10px;
+  height: 9px;
   border-radius: 7px;
   background: var(--clr-concrete);
 }
