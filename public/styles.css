@@ -66,12 +66,14 @@ p {
 
 .card {
   border-width: 10px !important;
+  border-radius: 20px !important;
 }
 
 .square-card {
   .card-img-top {
     border-bottom: none;
     object-fit: cover;
+    border-radius: 20px;
   }
 
   .card-title {
