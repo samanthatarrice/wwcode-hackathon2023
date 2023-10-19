@@ -1,27 +1,3 @@
-/* NAVBAR STYLES*/
-
-.custom-bg {
-  background-color: #6982c3 !important; /* Replace with your desired background color */
-}
-
-.container-fluid {
-  color: white;
-  font-family: "Inter", sans-serif;
-}
-
-.navbar {
-  --bs-navbar-brand-margin-end: 52rem !important;
-  --bs-navbar-brand-color: white !important;
-  --bs-navbar-nav-link-padding-x: 2rem !important;
-}
-
-#navbarSupportedContent {
-  --bs-navbar-color: white;
-}
-
-.logo {
-  margin-left: 7rem;
-}
 * {
   --coral: #ffa69e;
   --peach: #f9b8a1;
@@ -32,9 +8,54 @@
   --concrete: #5e6472;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold !important;
-  font-size: 5vw !important;
+}
+
+h1 {
+  font-size: 64px !important;
+  @media (max-width: 576px) {
+    font-size: 54px !important;
+  }
+}
+
+h3 {
+  font-size: 48px !important;
+  @media (max-width: 576px) {
+    font-size: 40px !important;
+  }
+}
+h4 {
+  font-size: 40px !important;
+  @media (max-width: 576px) {
+    font-size: 30px !important;
+  }
+}
+
+h5 {
+  font-size: 32px !important;
+  @media (max-width: 576px) {
+    font-size: 26px !important;
+  }
+}
+
+h6 {
+  font-size: 24px !important;
+  @media (max-width: 576px) {
+    font-size: 18px !important;
+  }
+}
+
+p {
+  font-size: 16px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 .card {
@@ -42,18 +63,13 @@ h1 {
 }
 
 .square-card {
-  width: 30%;
-  height: 30% !important;
-
   .card-img-top {
-    height: 250px;
-    border: 20px solid white;
     border-bottom: none;
     object-fit: cover;
   }
 
   .card-title {
-    font-size: 2vw;
+    font-size: 16px;
     font-weight: bold;
     color: var(--concrete);
   }
@@ -93,32 +109,33 @@ h1 {
   }
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  height: 3vw !important;
-  width: 3vw !important;
-}
-
-#goalsCarousel {
+.goals-carousel {
   .card {
     border-color: var(--peach) !important;
   }
 }
 
-.square-card {
-  width: 30%;
-  height: 30% !important;
+.desktop {
+  .square-card {
+    width: 30%;
+    min-height: 30% !important;
 
-  .card-img-top {
-    height: 17vw;
-    border: 20px solid white;
-    border-bottom: none;
-    object-fit: cover;
+    .card-img-top {
+      height: 17vw;
+      border: 20px solid white !important;
+    }
   }
+}
 
-  .card-title {
-    font-size: 2vw;
-    font-weight: bold;
-    color: var(--concrete);
+.mobile {
+  .square-card {
+    width: 80%;
+    height: 80% !important;
+
+    .card-img-top {
+      height: 200px;
+      border: 20px solid white !important;
+      border-bottom: none !important;
+    }
   }
 }
