@@ -1,25 +1,149 @@
+/* COLORS */
 
-/* NAVBAR STYLES*/
+* {
+  --coral: #ffa69e;
+  --peach: #f9b8a1;
+  --sunshine: #fee9b2;
+  --mint: #b8f2e6;
+  --new-wave: #aed9e0;
+  --persion-jewel: #6982c3;
+  --concrete: #5e6472;
+}
 
-.custom-bg {
-    background-color:#6982C3 !important; /* Replace with your desired background color */
+/* FONTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+
+h1 {
+  font-size: 64px !important;
+  @media (max-width: 576px) {
+    font-size: 54px !important;
+  }
+}
+
+h3 {
+  font-size: 48px !important;
+  @media (max-width: 576px) {
+    font-size: 40px !important;
+  }
+}
+h4 {
+  font-size: 40px !important;
+  @media (max-width: 576px) {
+    font-size: 30px !important;
+  }
+}
+
+h5 {
+  font-size: 32px !important;
+  @media (max-width: 576px) {
+    font-size: 26px !important;
+  }
+}
+
+h6 {
+  font-size: 24px !important;
+  @media (max-width: 576px) {
+    font-size: 18px !important;
+  }
+}
+
+p {
+  font-size: 16px;
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+/* CARDS */
+
+.card {
+  border-width: 10px !important;
+  border-radius: 20px !important;
+}
+
+.square-card {
+  .card-img-top {
+    border-bottom: none;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
-.container-fluid {
-  color: white;
-  font-family: 'Inter', sans-serif;
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--concrete);
+  }
 }
 
-.navbar{
-  --bs-navbar-brand-margin-end: 52rem !important; 
-  --bs-navbar-brand-color: white !important; 
-  --bs-navbar-nav-link-padding-x: 2rem !important;
+/* HERO */
+
+.hero-img {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
 }
 
-#navbarSupportedContent{
-  --bs-navbar-color: white;
+/* GOALS */
+
+.goals-title {
+  color: var(--concrete);
 }
 
-.logo{
-  margin-left: 7rem;
+.carousel-group {
+  width: 90%;
+}
+
+.carousel-control-prev {
+  justify-content: start !important;
+
+  .carousel-control-prev-icon {
+    background-image: url("/images/chevron-left-solid.svg") !important;
+  }
+}
+
+.carousel-control-next {
+  justify-content: end !important;
+
+  .carousel-control-next-icon {
+    background-image: url("/images/chevron-right-solid.svg") !important;
+  }
+}
+
+.goals-carousel {
+  .card {
+    border-color: var(--peach) !important;
+  }
+}
+
+.goals-carousel.desktop {
+  .square-card {
+    width: 30%;
+    min-height: 30% !important;
+
+    .card-img-top {
+      height: 17vw;
+      border: 20px solid white !important;
+    }
+  }
+}
+
+.goals-carousel.mobile {
+  .square-card {
+    width: 80%;
+    height: 80% !important;
+
+    .card-img-top {
+      height: 200px;
+      border: 20px solid white !important;
+      border-bottom: none !important;
+    }
+  }
 }
