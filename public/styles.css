@@ -1,3 +1,5 @@
+/* COLORS */
+
 * {
   --coral: #ffa69e;
   --peach: #f9b8a1;
@@ -7,6 +9,8 @@
   --persion-jewel: #6982c3;
   --concrete: #5e6472;
 }
+
+/* FONTS */
 
 h1,
 h2,
@@ -57,6 +61,8 @@ p {
     font-size: 14px;
   }
 }
+
+/* CARDS */
 
 .card {
   border-width: 10px !important;
@@ -115,7 +121,7 @@ p {
   }
 }
 
-.desktop {
+.goals-carousel.desktop {
   .square-card {
     width: 30%;
     min-height: 30% !important;
@@ -127,7 +133,7 @@ p {
   }
 }
 
-.mobile {
+.goals-carousel.mobile {
   .square-card {
     width: 80%;
     height: 80% !important;
