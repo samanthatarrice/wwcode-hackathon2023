@@ -1,3 +1,15 @@
+/*  COLOR VARIABLES*/
+:root{
+  --clr-energy-coral: #FFA69E;
+  --clr-peachy-peach: #F9B8A1;
+  --clr-Shower-me-in-sunshine: #FEE9B2;
+  --clr-golden-ivory: #FAF3DD;
+  --clr-It-is-mint-to-be: #B8F2E6;
+  --clr-new-wave: #AED9E0;
+  --clr-concrete: #5E6472;
+  --clr-persian-jewel: #6982C3;
+}
+
 
 /* NAVBAR STYLES*/
 
@@ -23,3 +35,42 @@
 .logo{
   margin-left: 7rem;
 }
+
+
+/******************************************
+/* SOUNDBAR STYLES
+/*******************************************/
+
+.soundbar{
+  height: 111px;
+  border-radius: 4rem;
+  border: 3px solid var(--clr-Shower-me-in-sunshine);
+}
+
+.vol-line{
+  height: 10px;
+  border-radius: 7px;
+  background: var(--clr-concrete);
+}
+
+.song-info-col .icons{
+  color: var(--clr-energy-coral);
+}
+
+.artist-name{
+  color: var(--clr-concrete);
+}
+
+.play-col .icons{
+  color: var(--clr-persian-jewel);
+}
+
+.play-col .btn{
+  color: var(--clr-persian-jewel);
+}
+
+
+.sound-control .icons{
+  color: var(--clr-concrete);
+}
+
