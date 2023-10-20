@@ -1,0 +1,90 @@
+<section class="resources mb-5">
+    <h1 class="goals-title text-center font-weight-bold pb-5">Resources</h1>
+  
+    <!-- Hardcoded for now. Once we have a DB we can map over the models: -->
+  
+    <!-- DESKTOP View -->
+    <!-- TODO: Break these out into partials -->
+    <div id="goalsCarousel" class="goals-carousel carousel slide desktop">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-group mx-auto">
+            <div class="d-flex justify-content-between w-100">
+              <div class="card square-card mx-2">
+                <div class="img-border">
+                    <img src="images/parentGuide.jpeg" class="card-img-top" alt="mother child embrace">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title text-center">Parent/Teacher Guide</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor enim dignissimos nulla, sed voluptate cumque, magnam similique tempora accusantium aliquam, ducimus fugiat saepe. Non et necessitatibus mollitia itaque fuga?</p>
+                </div>
+              </div>
+              <div class="card square-card mx-2">
+                <div class="img-border">
+                    <img src="images/parentGuide3.jpeg" class="card-img-top" alt="mother guiding">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title text-center">Meditaion/Mindufulness</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor enim dignissimos nulla, sed voluptate cumque, magnam similique tempora accusantium aliquam, ducimus fugiat saepe. Non et necessitatibus mollitia itaque fuga?</p>
+                </div>
+              </div>
+              <div class="card square-card mx-2">
+                <div class="img-border">
+                    <img src="images/podcasts.jpeg" class="card-img-top" alt="teen podcast">
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title text-center">Audio Stories/Podcasts</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor enim dignissimos nulla, sed voluptate cumque, magnam similique tempora accusantium aliquam, ducimus fugiat saepe. Non et necessitatibus mollitia itaque fuga?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+  
+    <!-- MOBILE View -->
+    <div id="goalsCarouselMobile" class="goals-carousel carousel slide d-none mobile">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <div class="card square-card">
+              <img src="images/parentGuide.jpeg" class="card-img-top" alt="Woman meditating">
+              <div class="card-body">
+                <h4 class="card-title text-center">Parent/Teacher Guide</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card square-card mx-2">
+              <img src="images/parentGuide3.jpeg" class="card-img-top" alt="Inspirational sticky notes">
+              <div class="card-body">
+                <h4 class="card-title text-center">Meditation/Mindufulness</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <div class="card square-card mx-2">
+              <img src="images/podcasts.jpeg" class="card-img-top" alt="Teen hiking a mountain">
+              <div class="card-body">
+                <h4 class="card-title text-center">Audio Stories/Podcasts</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  
+  <script>
+    if (window.innerWidth <= 800) {
+      document.querySelector('.mobile').classList.remove('d-none');
+      document.querySelector('.desktop').classList.add('d-none');
+    } else {
+      document.querySelector('.desktop').classList.remove('d-none');
+    }
+  </script>
+  
