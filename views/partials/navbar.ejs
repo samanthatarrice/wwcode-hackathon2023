@@ -68,7 +68,15 @@
 
 <script>
   const chatLink = document.querySelector('#chatLink');
-  const hideChatLink = window.innerWidth <= 800;
+  // const hideChatLink = window.innerWidth <= 800;
 
-  chatLink.classList.toggle('d-none', hideChatLink);
+  // chatLink.classList.toggle('d-none', hideChatLink);
+
+  function updateChatLinkVisibility() {
+    const isDesktop = window.innerWidth <= 992;
+    chatLink.classList.toggle('d-none', isDesktop);
+  }
+
+  window.addEventListener('load', updateChatLinkVisibility);
+  window.addEventListener('resize', updateChatLinkVisibility);
 </script>

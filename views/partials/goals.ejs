@@ -145,8 +145,14 @@
 <script>
   const mobileCarousel = document.querySelector('.mobile');
   const desktopCarousel = document.querySelector('.desktop');
-  const isMobile = window.innerWidth <= 800;
 
-  mobileCarousel.classList.toggle('d-none', !isMobile);
-  desktopCarousel.classList.toggle('d-none', isMobile);
+  function updateCarouselVisibility() {
+    const isMobileCarousel = window.innerWidth <= 992;
+    mobileCarousel.classList.toggle('d-none', !isMobileCarousel);
+    desktopCarousel.classList.toggle('d-none', isMobileCarousel);
+  }
+
+  window.addEventListener('load', updateCarouselVisibility);
+  window.addEventListener('resize', updateCarouselVisibility);
+
 </script>
