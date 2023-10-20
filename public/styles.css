@@ -108,9 +108,12 @@ p {
 
 .soundbar{
   height: 111px;
-  border-radius: 4rem;
-  border: 4px solid var(--clr-Shower-me-in-sunshine);
+  border: 3px solid var(--sunshine);
+  @media (max-width: 760px) {
+    padding: 3px !important;
+  }
 }
+
 
 .vol-line{
   height: 9px;
@@ -124,6 +127,15 @@ p {
 
 .artist-name{
   color: var(--concrete);
+  @media (max-width: 576px) {
+    font-size: 13px !important;
+  }
+}
+
+.song-name{
+  @media (max-width: 576px) {
+    font-size: 19px !important;
+  }
 }
 
 .play-col .icons{
