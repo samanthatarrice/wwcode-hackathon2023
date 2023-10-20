@@ -143,10 +143,10 @@
 </section>
 
 <script>
-  if (window.innerWidth <= 800) {
-    document.querySelector('.mobile').classList.remove('d-none');
-    document.querySelector('.desktop').classList.add('d-none');
-  } else {
-    document.querySelector('.desktop').classList.remove('d-none');
-  }
+  const mobileCarousel = document.querySelector('.mobile');
+  const desktopCarousel = document.querySelector('.desktop');
+  const isMobile = window.innerWidth <= 800;
+
+  mobileCarousel.classList.toggle('d-none', !isMobile);
+  desktopCarousel.classList.toggle('d-none', isMobile);
 </script>
