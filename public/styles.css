@@ -31,15 +31,12 @@
   --bs-navbar-brand-color: white !important;
 }
 
-#navbar {
-  .navbar-nav {
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-    .nav-link.active {
-      text-decoration: underline;
-    }
-  }
+#navbar .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+#navbar .navbar-nav .nav-link.active {
+  text-decoration: underline;
 }
 
 /*FOOTER STYLES*/
