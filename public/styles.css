@@ -203,3 +203,12 @@ footer a:hover {
     border: none;
   }
 }
+
+
+/* LOGIN-MODAL */
+
+.login-link {
+  color: white; 
+  text-decoration: none; 
+}
+
