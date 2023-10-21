@@ -287,3 +287,15 @@ footer .row{
 footer p{
   margin-top: 50px;
 }
+
+
+/* LOGIN-MODAL */
+
+.login-link {
+  color: white; 
+  text-decoration: none; 
+}
+
+.login-link:hover {
+  text-decoration: underline; 
+}
