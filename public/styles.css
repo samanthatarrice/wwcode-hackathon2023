@@ -22,7 +22,8 @@ h6 {
 }
 
 p,
-li {
+li,
+span {
   font-family: "Figtree", Arial, sans-serif;
 }
 
@@ -45,30 +46,25 @@ h6 {
   font-size: 24px !important;
 }
 
+.section-title {
+  color: var(--concrete);
+}
+
 .card {
   border-width: 10px !important;
   border-radius: 20px !important;
 }
 
-.square-card .card-img-top {
+.card-img-top {
   border-bottom: none;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 20px;
-}
-
-.resources .img-border {
-  border-bottom: 10px solid;
-  border-color: var(--persion-jewel);
-}
-
-.resources .card-img-top {
-  border-radius: 0;
-}
-
-.square-card .card-title {
-  font-size: 10px;
-  font-weight: bold;
-  color: var(--concrete);
+  border: 20px solid white !important;
+  border-bottom: none !important;
+  --bs-card-inner-border-radius: calc(
+    20px - (var(--bs-border-width))
+  ) !important;
+  width: 100%;
 }
 
 /*NAVBAR*/
@@ -90,8 +86,8 @@ ul.dropdown-menu > li:not(:last-child) {
   padding-bottom: 10px;
 }
 
-#navbar .navbar-nav .nav-link:hover {
-  text-decoration: underline;
+.nav-link {
+  --bs-nav-link-color: black;
 }
 
 #navbar .navbar-nav .nav-link.active {
@@ -108,10 +104,6 @@ ul.dropdown-menu > li:not(:last-child) {
 
 /* GOALS */
 
-.goals-title {
-  color: var(--concrete);
-}
-
 .carousel-group {
   width: 90%;
 }
@@ -120,12 +112,12 @@ ul.dropdown-menu > li:not(:last-child) {
   justify-content: start !important;
 }
 
-.carousel-control-prev-icon {
-  background-image: url("/images/chevron-left-solid.svg") !important;
-}
-
 .carousel-control-next {
   justify-content: end !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/images/chevron-left-solid.svg") !important;
 }
 
 .carousel-control-next .carousel-control-next-icon {
@@ -136,18 +128,9 @@ ul.dropdown-menu > li:not(:last-child) {
   border-color: var(--peach) !important;
 }
 
-.resources .goals-carousel .card {
-  border-color: var(--persion-jewel) !important;
-}
-
 .goals-carousel.desktop .square-card {
   width: 30%;
   min-height: 30% !important;
-}
-
-.goals-carousel.desktop .card-img-top {
-  height: 17vw;
-  border: 20px solid white !important;
 }
 
 .goals-carousel.mobile .square-card {
@@ -156,37 +139,27 @@ ul.dropdown-menu > li:not(:last-child) {
 }
 
 .goals-carousel.mobile .card-img-top {
-  height: 200px;
-  border: 20px solid white !important;
-  border-bottom: none !important;
+  aspect-ratio: 1 / 1;
+}
+
+/* RESOURCES */
+
+.resources .card {
+  border-color: var(--persion-jewel) !important;
 }
 
 /*FOOTER STYLES*/
 
 footer {
-  background-color: #6982c3 !important;
+  background-color: var(--persion-jewel) !important;
 }
 
-footer .container {
-  max-width: 100%;
+footer a {
+  color: white;
 }
 
-footer .listContact,
-.listAbout {
-  list-style: none;
-  padding: 0;
-}
-
-footer h5 {
-  font-weight: bold;
-}
-
-footer .row {
-  margin-top: 50px;
-}
-
-footer p {
-  margin-top: 50px;
+footer a:hover {
+  text-decoration: underline !important;
 }
 
 /* MEDIA QUERIES */
@@ -194,7 +167,7 @@ footer p {
 /* SM (mobile) breakpoints */
 @media (max-width: 576px) {
   h1 {
-    font-size: 54px !important;
+    font-size: 45px !important;
   }
   h3 {
     font-size: 40px !important;
@@ -207,6 +180,19 @@ footer p {
   }
   h6 {
     font-size: 18px !important;
+  }
+  #navbar .dropdown-item {
+    font-size: 16px;
+  }
+  .goals .card-title {
+    font-size: 20px !important;
+  }
+}
+
+/* MD to LG breakpoints */
+@media (min-width: 567px) and (max-width: 992px) {
+  .goals .card-title {
+    font-size: 25px !important;
   }
 }
 
