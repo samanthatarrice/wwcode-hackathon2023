@@ -1,0 +1,76 @@
+/* COLORS */
+
+* {
+  --coral: #ffa69e;
+  --peach: #f9b8a1;
+  --sunshine: #fee9b2;
+  --mint: #b8f2e6;
+  --new-wave: #aed9e0;
+  --persion-jewel: #6982c3;
+  --concrete: #5e6472;
+}
+
+/* FONTS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "M PLUS Rounded 1c", Helvetica, sans-serif;
+}
+
+p,
+li,
+span {
+  font-family: "Figtree", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 64px !important;
+}
+
+h3 {
+  font-size: 48px !important;
+}
+h4 {
+  font-size: 40px !important;
+}
+
+h5 {
+  font-size: 32px !important;
+}
+
+h6 {
+  font-size: 24px !important;
+}
+
+.section-title {
+  color: var(--concrete);
+}
+
+.card {
+  border-width: 10px !important;
+  border-radius: 20px !important;
+}
+
+.card-img-top {
+  border-bottom: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 20px solid white !important;
+  border-bottom: none !important;
+  --bs-card-inner-border-radius: calc(
+    20px - (var(--bs-border-width))
+  ) !important;
+  width: 100%;
+}
+
+/* HERO */
+
+.hero-img {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+}

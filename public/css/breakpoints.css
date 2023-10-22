@@ -1,0 +1,49 @@
+/* SM (mobile) breakpoints */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  h3 {
+    font-size: 35px !important;
+  }
+  h4 {
+    font-size: 30px !important;
+  }
+  h5 {
+    font-size: 26px !important;
+  }
+  h6 {
+    font-size: 18px !important;
+  }
+  #navbar .logo {
+    width: 40px;
+  }
+  #navbar .dropdown-item {
+    font-size: 16px;
+  }
+  .goals .card-title {
+    font-size: 20px !important;
+  }
+}
+
+/* MD to LG breakpoints */
+@media (min-width: 567px) and (max-width: 992px) {
+  .goals .card-title {
+    font-size: 25px !important;
+  }
+}
+
+/* LG breakpoints */
+@media (max-width: 992px) {
+  #navbar .dropdown-menu {
+    background: var(--persion-jewel);
+    border: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .soundbar {
+    padding: 3px !important;
+    bottom: 3%;
+  }
+}
