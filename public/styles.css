@@ -305,3 +305,10 @@ footer p{
   --bs-btn-border-color:none;
   --bs-btn-hover-bg: var(--concrete);
 }
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
