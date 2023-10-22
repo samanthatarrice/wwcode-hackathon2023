@@ -299,3 +299,9 @@ footer p{
 .login-link:hover {
   text-decoration: underline; 
 }
+
+.modal .modal-footer .btn{
+  --bs-btn-bg:var(--persion-jewel);
+  --bs-btn-border-color:none;
+  --bs-btn-hover-bg: var(--concrete);
+}
