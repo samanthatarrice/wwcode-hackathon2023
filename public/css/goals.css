@@ -1,0 +1,37 @@
+.carousel-group {
+  width: 90%;
+}
+
+.carousel-control-prev {
+  justify-content: start !important;
+}
+
+.carousel-control-next {
+  justify-content: end !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("/images/chevron-left-solid.svg") !important;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  background-image: url("/images/chevron-right-solid.svg") !important;
+}
+
+.goals-carousel .card {
+  border-color: var(--peach) !important;
+}
+
+.goals-carousel.desktop .square-card {
+  width: 30%;
+  min-height: 30% !important;
+}
+
+.goals-carousel.mobile .square-card {
+  width: 80%;
+  height: 80% !important;
+}
+
+.goals-carousel.mobile .card-img-top {
+  aspect-ratio: 1 / 1;
+}

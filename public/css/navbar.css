@@ -1,0 +1,27 @@
+#navbar {
+  background-color: var(--persion-jewel);
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-brand-padding-y: 0;
+  --bs-navbar-nav-link-padding-x: 1.25rem;
+  --bs-navbar-brand-color: white;
+}
+
+#navbar .logo {
+  width: 70px;
+}
+
+#navbar .dropdown-item {
+  font-size: 20px;
+}
+
+ul.dropdown-menu > li:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.nav-link {
+  --bs-nav-link-color: black;
+}
+
+#navbar .navbar-nav .nav-link.active {
+  text-decoration: underline !important;
+}
