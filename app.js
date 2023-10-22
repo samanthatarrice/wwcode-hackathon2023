@@ -25,6 +25,8 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static(path.join(__dirname, "public")));
+// Serve static files from the "public" directory
+app.use('/public', express.static('public'));
 
 app.get("/", (req, res) => {
   res.render("home");

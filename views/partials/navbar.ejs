@@ -1,26 +1,24 @@
-
-
-<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand  d-flex align-items-center">
-      <img src="logo.png" alt="Logo" class="img-fluid">
-      <h1  class="fw-bold">Lavender</h1>
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/images/logo.png" alt="Logo" class="logo rounded-circle mx-0 mx-md-2">
+      <h1 class="fw-bold mb-0 mx-2">Lavender</h1>
     </a>
-    
-   
-   <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item ">
-  <!--  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-    Login
-  </button>-->
-  <a href="#loginModal" class="nav-link login-link active" data-bs-toggle="modal">Sign In</a>
 
-          <!-- <a class="nav-link active" aria-current="page" href="#">Sign In</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item pt-3 pt-md-0">
+          <a class="nav-link fw-bold" aria-current="page" href="#">
+            <h6 class="d-inline">Sign In</h6>
+          </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Emotions
+          <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h6 class="d-inline">Emotions</h6>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Angry</a></li>
@@ -31,8 +29,8 @@
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Goals
+          <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h6 class="d-inline">Goals</h6>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Calm Down</a></li>
@@ -43,9 +41,9 @@
             <li><a class="dropdown-item" href="#">Journal</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Resources
+        <li class="nav-item dropdown pb-3 pb-md-0">
+          <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h6 class="d-inline">Resources</h6>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Meditation Apps</a></li>
@@ -54,13 +52,27 @@
           </ul>
         </li>
       </ul>
-   </div>
- 
-  <div class="chat">
-    <a class="navbar-brand d-flex align-items-center">
-      <span class="m-2">Let's Talk</span>
-      <i class="fas fa-comment fa-3x"></i>
-    </a>
-  </div>
+    </div>
+
+    <div class="chat" id="chatLink">
+      <a class="navbar-brand d-flex align-items-center">
+        <span class="m-3 fw-bold">
+          <h6 class="d-inline">Let's Talk</h6>
+        </span>
+        <i class="fas fa-comment fa-3x"></i>
+      </a>
+    </div>
   </div>
 </nav>
+
+<script>
+  const chatLink = document.querySelector('#chatLink');
+
+  function updateChatLinkVisibility() {
+    const isDesktop = window.innerWidth <= 992;
+    chatLink.classList.toggle('d-none', isDesktop);
+  }
+
+  window.addEventListener('load', updateChatLinkVisibility);
+  window.addEventListener('resize', updateChatLinkVisibility);
+</script>

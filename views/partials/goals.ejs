@@ -1,5 +1,5 @@
-<section class="mb-5">
-  <h1 class="goals-title text-center font-weight-bold pb-5">Goals</h1>
+<section class="goals pb-3 mb-5 mx-3">
+  <h1 class="section-title text-center pb-2 pb-md-3">Goals</h1>
 
   <!-- Hardcoded for now. Once we have a DB we can map over the models: -->
 
@@ -49,7 +49,7 @@
             <div class="card square-card mx-2">
               <img src="images/grounding.jpeg" class="card-img-top" alt="Person touching sand under ocean tide">
               <div class="card-body">
-                <h4 class="card-title text-center">Ground Yourself</h4>
+                <h4 class="card-title text-center">Get Grounded</h4>
               </div>
             </div>
           </div>
@@ -66,12 +66,11 @@
     </button>
   </div>
 
-
   <!-- MOBILE View -->
   <div id="goalsCarouselMobile" class="goals-carousel carousel slide d-none mobile">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card">
             <img src="images/mindful.jpeg" class="card-img-top" alt="Woman meditating">
             <div class="card-body">
@@ -81,7 +80,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card mx-2">
             <img src="images/inspired.jpeg" class="card-img-top" alt="Inspirational sticky notes">
             <div class="card-body">
@@ -91,7 +90,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card mx-2">
             <img src="images/destress.jpeg" class="card-img-top" alt="Teen hiking a mountain">
             <div class="card-body">
@@ -101,7 +100,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card mx-2">
             <img src="images/journal.jpeg" class="card-img-top" alt="Teen journaling on laptop">
             <div class="card-body">
@@ -111,7 +110,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card mx-2">
             <img src="images/motivation.jpeg" class="card-img-top" alt="Motivational quote: 'Turn Ideas Into Reality'">
             <div class="card-body">
@@ -121,11 +120,11 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mx-4">
           <div class="card square-card mx-2">
             <img src="images/grounding.jpeg" class="card-img-top" alt="Person touching sand under ocean tide">
             <div class="card-body">
-              <h4 class="card-title text-center">Ground Yourself</h4>
+              <h4 class="card-title text-center">Get Grounded</h4>
             </div>
           </div>
         </div>
@@ -143,10 +142,16 @@
 </section>
 
 <script>
-  if (window.innerWidth <= 800) {
-    document.querySelector('.mobile').classList.remove('d-none');
-    document.querySelector('.desktop').classList.add('d-none');
-  } else {
-    document.querySelector('.desktop').classList.remove('d-none');
+  const mobileCarousel = document.querySelector('.mobile');
+  const desktopCarousel = document.querySelector('.desktop');
+
+  function updateCarouselVisibility() {
+    const isMobileCarousel = window.innerWidth <= 768;
+    mobileCarousel.classList.toggle('d-none', !isMobileCarousel);
+    desktopCarousel.classList.toggle('d-none', isMobileCarousel);
   }
+
+  window.addEventListener('load', updateCarouselVisibility);
+  window.addEventListener('resize', updateCarouselVisibility);
+
 </script>

@@ -1,0 +1,15 @@
+footer {
+  background-color: var(--persion-jewel) !important;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+}
+
+footer .logo {
+  width: 100px;
+}
