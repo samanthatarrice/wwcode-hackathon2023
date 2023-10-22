@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="/styles.css">
   <link rel="stylesheet" type="text/css" href="/css/global.css">
   <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/css/soundbar.css">
   <link rel="stylesheet" type="text/css" href="/css/goals.css">
   <link rel="stylesheet" type="text/css" href="/css/resources.css">
   <link rel="stylesheet" type="text/css" href="/css/footer.css">
@@ -21,8 +22,10 @@
 </head>
 <body>
   <%- include('../partials/navbar')%>
-  <img class="hero-img mb-md-5" src="/images/teens-holi.jpeg" alt="Happy teens celebrating Holi">
-  <%- include('../partials/soundbar') %>
+  <section class="position-relative">
+    <img class="hero-img mb-md-5" src="/images/teens-holi.jpeg" alt="Happy teens celebrating Holi">
+    <%- include('../partials/soundbar') %>
+  </section>
 
   <main class="container mt-5">
     <%- body %>

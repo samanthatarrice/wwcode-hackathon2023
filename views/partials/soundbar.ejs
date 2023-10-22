@@ -1,32 +1,27 @@
-  <div class="container-fulid soundbar row rounded-pill p-4 auto">
-
-    <div class="column song-info-col d-flex justify-content-start align-items-center gap-4 col">
-
-      <div class="song-info text-center ">
-        <h3 class="song-name fs-4 font-weight-bold">Song Name</h3>
-        <h6 class="artist-name fs-6 font-weight-light">Artist Name</h6>
-      </div> 
-      <i class="fa-solid fa-heart icons fs-1"></i>
+<div class="position-absolute soundbar row rounded-pill my-auto mx-auto px-4">
+  <div class="column song-info-col d-flex justify-content-start align-items-center gap-4 col px-0">
+    <div class="song-info text-center">
+      <h6 class="song-name font-weight-bold">Song Name</h6>
+      <h6 class="artist-name fs-6 font-weight-light mb-0">Artist Name</h6>
     </div>
-    <div class="play-col column col d-flex justify-content-center align-items-center">
-
-      <button class="btn border-0" type="button">
-        <i class="fa-solid fa-backward icons fs-1"></i>
-      </button>
-
-      <button class="btn border-0" type="button">
-        <i class="fa-solid fa-play icons fs-1"></i>
-      </button>
-
-      <button class="btn border-0" type="button">
-        <i class="fa-solid fa-forward icons fs-1"></i>
-      </button>
-    </div>
-
-    <div class="sound-control column col d-flex justify-content-end align-items-center gap-2">
-      <i class="fa-solid fa-volume-high fs-1 icons"></i>
-      <div class="col-5 vol-line"></div>
-      <i class="fa-solid fa-ellipsis icons fs-1"></i>
-    </div>
-
+    <i class="fa-solid fa-heart icons fs-1 d-none d-md-inline"></i>
   </div>
+
+  <div class="play-col column col d-flex justify-content-center align-items-center px-0">
+    <button class="btn border-0 d-none d-md-inline" type="button">
+      <i class="fa-solid fa-backward icons fs-1"></i>
+    </button>
+    <button class="btn border-0" type="button">
+      <i class="fa-solid fa-play icons fs-1"></i>
+    </button>
+    <button class="btn border-0 d-none d-md-inline" type="button">
+      <i class="fa-solid fa-forward icons fs-1"></i>
+    </button>
+  </div>
+
+  <div class="sound-control column col d-flex justify-content-end align-items-center gap-4 px-0">
+    <i class="fa-solid fa-volume-high fs-1 icons d-none d-md-inline"></i>
+    <div class="col-5 vol-line d-none d-md-inline"></div>
+    <i class="fa-solid fa-ellipsis icons fs-1"></i>
+  </div>
+</div>

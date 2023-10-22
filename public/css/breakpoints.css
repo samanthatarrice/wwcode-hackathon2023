@@ -40,3 +40,10 @@
     border: none;
   }
 }
+
+@media (max-width: 760px) {
+  .soundbar {
+    padding: 3px !important;
+    bottom: 3%;
+  }
+}

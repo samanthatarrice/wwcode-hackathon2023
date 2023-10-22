@@ -1,0 +1,37 @@
+/* SOUNDBAR  */
+
+.soundbar {
+  height: 12%;
+  border: 3px solid var(--sunshine);
+  background: white;
+  bottom: 12%;
+  left: 0;
+  right: 0;
+  width: 95%;
+}
+
+.vol-line {
+  height: 9px;
+  border-radius: 7px;
+  background: var(--concrete);
+}
+
+.song-info-col .icons {
+  color: var(--coral);
+}
+
+.artist-name {
+  color: var(--concrete);
+}
+
+.play-col .icons {
+  color: var(--persion-jewel);
+}
+
+.play-col .btn {
+  color: var(--persion-jewel);
+}
+
+.sound-control .icons {
+  color: var(--concrete);
+}
