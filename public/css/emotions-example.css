@@ -1,0 +1,23 @@
+.angry {
+  background: var(--coral);
+}
+
+.anxious {
+  background: var(--sunshine);
+}
+
+.happy {
+  background: var(--mint);
+}
+
+.silly {
+  background: var(--new-wave);
+}
+
+.sad {
+  background: var(--persion-jewel);
+}
+
+.emotion-img {
+  max-width: 100%;
+}
