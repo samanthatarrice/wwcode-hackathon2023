@@ -36,9 +36,7 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.get("/about", (req, res) => {
-  res.render("about");
-});
+
 
 
 app.listen(3000, () => {
