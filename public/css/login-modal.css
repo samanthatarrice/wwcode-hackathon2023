@@ -1,0 +1,23 @@
+/* LOGIN-MODAL */
+
+.login-link {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+  .login-link:hover {
+    text-decoration: underline; 
+  }
+  
+  .modal .modal-footer .btn{
+    --bs-btn-bg:var(--persion-jewel);
+    --bs-btn-border-color:none;
+    --bs-btn-hover-bg: var(--concrete);
+  }
+  
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+  }

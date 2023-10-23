@@ -3,7 +3,6 @@ const path = require("path");
 const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 
-
 // Mongoose connect:
 main().catch((err) =>
   console.log("There was an error connecting to Mongo:", err)
@@ -69,6 +68,9 @@ app.get("/emotions/sad", (req, res) => {
   res.render("emotions/sad");
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
 
 app.listen(3000, () => {
   console.log("Serving Lavender on port 3000");
