@@ -21,3 +21,11 @@
 .emotion-img {
   max-width: 100%;
 }
+
+.emotion-link:hover {
+  opacity: 0.5;
+}
+
+.emotion-title {
+  color: black !important;
+}
