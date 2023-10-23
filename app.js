@@ -32,6 +32,24 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+// Emotions routes:
+app.get("/emotions/angry", (req, res) => {
+  res.render("emotions/angry");
+});
+app.get("/emotions/anxios", (req, res) => {
+  res.render("emotions/angry");
+});
+app.get("/emotions/happy", (req, res) => {
+  res.render("emotions/angry");
+});
+app.get("/emotions/silly", (req, res) => {
+  res.render("emotions/angry");
+});
+app.get("/emotions/sad", (req, res) => {
+  res.render("emotions/angry");
+});
+
+
 app.listen(3000, () => {
   console.log("Serving Lavender on port 3000");
 });
