@@ -1,10 +1,14 @@
-# Lavender - Women Who Code Hackathon for Social Good 2023
+# Lavender
+
+<h2>Women Who Code Hackathon for Social Good 2023</h2>
 
 <h6>Challenge Statement & Proposed Solution:</h6>
 <p>Addressing the challenge of students' mental health struggles due to resource limitations, the solution bridges the gap between family and professional support, reduces stigma, and offers diverse communities curated resources and direct professional access. Utilizing a tech stack of emerging technologies such as JS, EJS, HTML, Bootstrap (front-end) and Python, Flask, MySQL (back-end), the non-profit website provides free access to a broad audience.</p>
 
+![screenshot-home](https://github.com/samanthatarrice/wwcode-hackathon2023/assets/88330216/5ced21d9-007d-47ac-a99d-5bccabc5430f)
+
 <h6>Functionality</h6>
-<p>Our application provides adolescents with a secure environment to foster their mental health and overall well-being. When a user is signed in, they gain the capability to express their emotions, drawing inspiration from the Zones of Proximal Development. From there, they can select a corresponding activity to address their current emotional state. Following the activity, users have the opportunity to reflect on their experience, tracking their emotions and insights to assess the effectiveness of the chosen activity. Additionally, they can initiate a conversation with a trusted adult, whether it's a school counselor, teacher, or a parent, for further support and guidance.</p>
+<p>Our application provides adolescents with a secure environment to foster their mental health and overall well-being. When a user is signed in, they gain the capability to express their emotions, drawing inspiration from the Zones of Proximal Development. From there, they can select a corresponding activity to address their current emotional state. Following the activity, users have the opportunity to reflect on their experience, tracking their emotions and insights to assess the effectiveness of the chosen activity. Additionally, they can initiate a conversation with a trusted adult, whether it's a school counselor, teacher, or a parent, for further support and guidance. Both users who are logged in or haven't signed up yet get access to activities based on goals and resources.</p>
 
 ## How It's Made:
 
