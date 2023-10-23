@@ -8,10 +8,12 @@
   <link rel="stylesheet" type="text/css" href="/css/navbar.css">
   <link rel="stylesheet" type="text/css" href="/css/login-modal.css">
   <link rel="stylesheet" type="text/css" href="/css/soundbar.css">
+  <link rel="stylesheet" type="text/css" href="/css/emotions-example.css">
   <link rel="stylesheet" type="text/css" href="/css/goals.css">
   <link rel="stylesheet" type="text/css" href="/css/resources.css">
   <link rel="stylesheet" type="text/css" href="/css/footer.css">
   <link rel="stylesheet" type="text/css" href="/css/breakpoints.css">
+  <link rel="stylesheet" type="text/css" href="/css/activities.css">
   <script src="https://kit.fontawesome.com/022591a88a.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="/styles.css">
@@ -23,6 +25,7 @@
   <title>Lavender</title>
 </head>
 <body>
+
   <%- include('../partials/navbar')%>
   <section class="position-relative">
     <img class="hero-img mb-md-5" src="/images/teens-holi.jpeg" alt="Happy teens celebrating Holi">
@@ -30,10 +33,11 @@
   </section>
 
   <main class="container mt-5">
-    <%- body %>
+    <%-body%>
   </main>
 
   <%- include('../partials/footer')%>
+  <%- include('../partials/login-modal')%>
 
   <%- include('../partials/login-modal')%>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

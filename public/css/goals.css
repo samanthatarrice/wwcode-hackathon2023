@@ -35,3 +35,8 @@
 .goals-carousel.mobile .card-img-top {
   aspect-ratio: 1 / 1;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  pointer-events: auto !important;
+}
