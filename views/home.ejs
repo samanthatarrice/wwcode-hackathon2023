@@ -1,2 +1,8 @@
 <% layout('layouts/boilerplate') %>
-<img class="hero-img mb-md-5" src="/images/teens-holi.jpeg" alt="Happy teens celebrating Holi">
+
+<% const user = true %>
+<% if (user) { %>
+  <%- include('partials/emotions-example') %>
+<% } %>
+<%- include('partials/goals')%>
+<%- include('partials/resources')%>
