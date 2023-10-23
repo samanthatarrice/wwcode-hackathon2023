@@ -1,5 +1,8 @@
 <% layout('layouts/boilerplate') %>
 
-<%# - include('partials/emotions') %>
+<% const user = true %>
+<% if (user) { %>
+  <%- include('partials/emotions') %>
+<% } %>
 <%- include('partials/goals')%>
 <%- include('partials/resources')%>
